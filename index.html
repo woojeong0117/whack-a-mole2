@@ -184,6 +184,7 @@
             if (started) return
             resetGame();
             start.volume = 0.5
+            start.currentTime = 0
             start.play()
             timerId = setInterval(() => {
                 time = (time * 10 - 1) / 10
